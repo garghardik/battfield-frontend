@@ -1,0 +1,8 @@
+.headerText {
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-weight:600;
+}

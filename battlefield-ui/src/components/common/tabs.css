@@ -1,0 +1,26 @@
+.tab-button {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.tab-button:hover {
+  background-color: white;
+  color: #000;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.tab-icon {
+  display: flex;
+  align-items: center;
+}
