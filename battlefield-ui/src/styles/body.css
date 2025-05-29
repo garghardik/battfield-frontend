@@ -7,13 +7,13 @@
     align-items: start;
     color: white;
     font-family: 'Orbitron', sans-serif;
-    line-height: 1.6;
+    line-height: 0.1;
 }
 
 .server-title {
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px */
 }
 
 .server-details {
@@ -45,4 +45,33 @@
 
 .server-description a:hover {
     text-decoration: underline;
+}
+
+.settingsBody {
+    width: 64%;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
+}
+
+.settingsBody::-webkit-scrollbar {
+  width: 3px; /* or any width you prefer */
+}
+
+.settingsBody::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* subtle track color */
+  border-radius: 4px;
+    margin-block: 10px; /* creates visual top & bottom margin (shortens track) */
+}
+
+.settingsBody::-webkit-scrollbar-thumb {
+  background: white; /* thumb color */
+  border-radius: 4px;
+  min-height: 40px;
+  transition: background 0.3s;
+}
+
+.settingsBody::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4); /* darker on hover */
 }

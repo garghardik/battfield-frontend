@@ -6,24 +6,22 @@ import MainBody from "./body";
 
 const ServerInfo = () => {
     const backgroundStyle = {
-        backgroundColor : "white",
-        backgroundImage: `url(${Images.menuBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${Images.menuBackground})`,
+        backgroundSize: '100% 100%',
+        backgroundPosition: 'cover',
         backgroundRepeat: 'no-repeat',
-        height: '100vh',
+        height: '100vh', 
         width: '100vw',
         marging: 0,
-        padding : 0
+        padding: 0
     };
 
-    return <div style={backgroundStyle}>
+    return (<div style={backgroundStyle}>
         <div className="body">
-        <Header/>
-        <MainBody/>
+            <Header />
+            <MainBody />
         </div>
-    </div>
-        ;
+    </div>);
 }
 
 export default ServerInfo;
