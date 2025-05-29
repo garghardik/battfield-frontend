@@ -8,7 +8,7 @@ const Statistics = () => {
     const [settingsData, setSettingsData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/battlefield/server-settings')
+        fetch(`${process.env.REACT_APP_SERVER_DOMAIN}/battlefield/server-settings`)
             .then(response => response.json())
             .then(json => {
                 console.log("json data:::", json);
