@@ -1,4 +1,4 @@
-.containerTop{
+.containerTop {
     display: flex;
     margin: 20px 0;
     justify-content: space-between;
@@ -6,8 +6,9 @@
     color: white;
 }
 
-.settingsContainer{
+.settingsContainer {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
 }

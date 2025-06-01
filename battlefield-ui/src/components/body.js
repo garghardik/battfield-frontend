@@ -7,7 +7,7 @@ import Statistics from "./statistics/main";
 const MainBody = () => {
 
     const TabsBody = () => {
-        return (<div style={{ display: 'flex', gap: '8px', paddingTop: '20px', }}>
+        return (<div style={{ display: 'flex', gap: '8px', paddingTop: '20px', flexWrap:"wrap"}}>
             <Tabs text="JOIN" />
             <Tabs text="SPECTATE" />
             <Tabs text="JOIN AS COMMANDER" />
